@@ -3,4 +3,66 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  background-color: #27262B;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 16px 0;
+}
+.navbar_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+.navbar_item {
+  list-style: none;
+  cursor: pointer;
+}
+.navbar_item:hover {
+  color: #FFCE25;
+}
+
+.gynLogo {
+  color: #FFCE25;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 80px;
+  }
+}
+@media screen and (min-width: 461px) and (max-width: 768px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .container {
+    padding: 0 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

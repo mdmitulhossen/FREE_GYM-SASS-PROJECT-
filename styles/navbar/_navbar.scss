@@ -1,0 +1,35 @@
+@import '../variables';
+
+
+.navbar {
+    background-color: $navBg;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 16px 0;  
+    }
+    &_menu {
+        display: flex;
+        // color: white;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+        font-weight: 500;
+    } 
+    &_item {
+        list-style: none;
+        cursor: pointer;
+        &:hover {
+            color: $nav_menu_hover;
+        }
+    }
+}
+
+.gynLogo{
+    color: $nav_menu_hover;
+}

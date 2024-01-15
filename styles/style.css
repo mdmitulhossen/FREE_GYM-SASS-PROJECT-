@@ -30,12 +30,32 @@ li {
   gap: 1.5rem;
   font-weight: 500;
 }
+@media screen and (max-width: 460px) {
+  .navbar_menu {
+    display: none;
+  }
+}
 .navbar_item {
   list-style: none;
   cursor: pointer;
 }
 .navbar_item:hover {
   color: #FFCE25;
+}
+.navbar .mobile_menu {
+  display: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: #FFCE25;
+}
+@media screen and (max-width: 460px) {
+  .navbar .mobile_menu {
+    display: block;
+  }
 }
 
 .gynLogo {
@@ -58,7 +78,7 @@ body {
 }
 @media screen and (min-width: 461px) and (max-width: 768px) {
   .container {
-    padding: 0 60px;
+    padding: 0 40px;
   }
 }
 @media screen and (max-width: 460px) {

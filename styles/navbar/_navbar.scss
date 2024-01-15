@@ -20,12 +20,28 @@
         align-items: center;
         gap: 1.5rem;
         font-weight: 500;
+        @include mobile {
+            display: none;
+        }
     } 
     &_item {
         list-style: none;
         cursor: pointer;
         &:hover {
             color: $nav_menu_hover;
+        }
+    }
+    .mobile_menu {
+        display: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 0;
+        outline: none;
+        font-size: 14px;
+        font-weight: 600;
+        background: $nav_menu_hover;
+        @include mobile {
+            display: block;
         }
     }
 }

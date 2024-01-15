@@ -48,7 +48,6 @@ nav {
 .navbar .mobile_menu {
   display: none;
   padding: 5px 8px;
-  display: flex;
   justify-content: center;
   align-items: center;
   border: none;
@@ -68,7 +67,7 @@ nav {
 }
 @media screen and (max-width: 460px) {
   .navbar .mobile_menu {
-    display: block;
+    display: flex;
   }
 }
 
@@ -355,6 +354,92 @@ nav {
 @media screen and (min-width: 1025px) and (max-width: 1520px) {
   .title_divider {
     width: 90px;
+  }
+}
+
+.footer_content {
+  display: flex;
+  padding: 50px 0 0;
+}
+@media screen and (max-width: 460px) {
+  .footer_content {
+    flex-direction: column;
+  }
+}
+.footer_content .footer_contact_us {
+  padding: 50px;
+  background-color: #27262B;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  justify-items: center;
+}
+@media screen and (max-width: 460px) {
+  .footer_content .footer_contact_us {
+    text-align: center;
+    justify-content: center;
+  }
+}
+.footer_content .footer_contact_us div {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.707);
+  line-height: 30px;
+}
+.footer_content .footer_follow_us {
+  background-color: #000;
+  padding: 50px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 460px) {
+  .footer_content .footer_follow_us {
+    text-align: center;
+  }
+}
+.footer_content .footer_follow_us .footer_social_item {
+  color: rgba(255, 255, 255, 0.707);
+  font-size: 30px;
+}
+.footer_content .footer_follow_us p {
+  color: rgba(255, 255, 255, 0.707);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer_content .footer_follow_us .icon_container {
+  display: flex;
+  justify-content: start;
+  justify-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 460px) {
+  .footer_content .footer_follow_us .icon_container {
+    justify-content: center;
+  }
+}
+
+.footer_title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer_copy_right {
+  background-color: #151515;
+  padding: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.507);
+  font-size: 18px;
+  font-weight: 500;
+}
+@media screen and (max-width: 460px) {
+  .footer_copy_right {
+    font-size: 14px;
   }
 }
 

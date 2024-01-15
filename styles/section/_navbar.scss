@@ -37,12 +37,11 @@ nav {
     .mobile_menu {
         display: none;
         padding: 5px 8px;
-        display: flex;
         justify-content: center;
         align-items: center;
         @include btn($nav_menu_hover, $black, 20px);
         @include mobile {
-            display: block;
+            display: flex;
         }
     }
 }

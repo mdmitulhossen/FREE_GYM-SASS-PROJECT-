@@ -1,0 +1,76 @@
+.footer_content{
+    display: flex;
+    padding: 50px 0 0;
+    @include mobile{
+        flex-direction: column;
+    }
+    .footer_contact_us {
+        padding: 50px;
+        background-color: $navBg;
+        flex: 1;
+        display: flex;
+        justify-content: end;
+        justify-items: center;
+        @include mobile{
+            text-align: center;
+            justify-content: center;
+        }
+        div{
+            text-align: center;
+            color: rgba(255, 255, 255, 0.707);
+            line-height: 30px;
+        }
+    }
+    .footer_follow_us {
+        background-color: $black;
+        padding: 50px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+        @include mobile{
+            text-align: center;
+        }
+        .footer_social_item {
+            color: rgba(255, 255, 255, 0.707);
+            font-size: 30px;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.707);
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .icon_container{
+            display: flex;
+            justify-content: start;
+            justify-items: center;
+            margin-bottom: 20px;
+            gap: 10px;
+            padding-top: 10px;
+            @include mobile{
+                justify-content: center;
+            }
+        }
+    }
+
+}
+
+.footer_title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer_copy_right{
+    background-color: #151515;
+    padding: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.507);
+    font-size: 18px;
+    font-weight: 500;
+    @include mobile{
+        font-size: 14px;
+    }
+}

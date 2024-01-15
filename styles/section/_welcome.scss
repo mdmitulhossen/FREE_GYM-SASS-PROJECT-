@@ -1,0 +1,128 @@
+.welcome {
+    padding: 5rem 0;
+    &_title {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 55px;
+        font-weight: 800;
+        letter-spacing: 4px;
+        color: $navBg;
+        @include mobile {
+            font-size: 32px;
+        }
+        @include tablet {
+            font-size: 40px;
+        }
+        @include laptop {
+            font-size: 45px;
+        }
+        @include desktop {
+            font-size: 50px;
+        }
+    }
+    &_text {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 20px;
+        font-weight: 500;
+        color: #000000b3;
+        width: 90%;
+        margin: 0 auto 2rem;
+        @include mobile {
+            font-size: 14px;
+            width: 100%;
+        }
+        @include tablet {
+            font-size: 16px;
+            width: 100%;
+        }
+        @include laptop {
+            font-size: 18px;
+        }
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+    &_card{
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px;
+        @include mobile{
+            flex-wrap: wrap;
+        }
+        @include tablet{
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .card{
+            min-width: 300px;
+            width: 100%;
+            padding: 20px;
+            border: 2px solid rgba(128, 128, 128, 0.611);      
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            transition: all .3s ease;
+            
+            @include mobile{
+                width: 250px;
+                height: 250px;
+            }
+            &_icon{
+                font-size: 40px;
+                background: $navBg;
+                padding: 8px 12px;
+                border-radius: 100%;
+                color: $white;
+                margin-top: -50px;
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+            &_title{
+                font-size: 28px;
+                font-weight: 700;
+                text-align: center;
+                color: $nav_menu_hover;
+                @include mobile{
+                    font-size: 20px;
+                }
+            }
+            &_text{
+                font-size: 16px;
+                text-align: center;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.86);
+                @include mobile{
+                    font-size: 14px;
+                }
+            }
+        }
+    
+    }
+}
+
+.title_divider{
+    width: 100px;
+    height: 3px;
+    background: $nav_menu_hover;
+    margin: 0 auto 2rem;
+    @include mobile{
+        width: 50px;
+    }
+    @include tablet{
+        width: 70px;
+    }
+    @include laptop{
+        width: 80px;
+    }
+    @include desktop{
+        width: 90px;
+    }
+}

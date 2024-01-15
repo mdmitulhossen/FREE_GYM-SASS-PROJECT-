@@ -76,7 +76,7 @@ nav {
 }
 
 .hero {
-  background: url("https://raw.githubusercontent.com/mdmitulhossen/FREE_GYM-SASS-PROJECT-/main/assests/heroBG.jpg") no-repeat center center/cover;
+  background: url("../../assests/heroBG.jpg") no-repeat center center/cover;
   min-height: calc(100vh - 65px);
   display: flex;
   align-items: center;

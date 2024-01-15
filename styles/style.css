@@ -45,12 +45,20 @@ li {
 .navbar .mobile_menu {
   display: none;
   padding: 5px 10px;
-  border-radius: 5px;
-  border: 0;
+  border: none;
   outline: none;
+  border-radius: 5px;
+  background: #FFCE25;
+  color: #000;
   font-size: 14px;
   font-weight: 600;
-  background: #FFCE25;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 4px;
+}
+.navbar .mobile_menu:hover {
+  background: #000;
+  color: #FFCE25;
 }
 @media screen and (max-width: 460px) {
   .navbar .mobile_menu {
@@ -59,6 +67,50 @@ li {
 }
 
 .gynLogo {
+  color: #FFCE25;
+}
+
+.hero {
+  background: url("../../assests/heroBG.jpg") no-repeat center center/cover;
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.hero .hero_title {
+  margin-bottom: 1rem;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+.hero .hero_text {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7019607843);
+  width: 90%;
+  margin: 0 auto 2rem;
+}
+.hero .hero_btn {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #FFCE25;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero .hero_btn:hover {
+  background: #000;
   color: #FFCE25;
 }
 

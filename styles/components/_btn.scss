@@ -1,0 +1,16 @@
+@mixin btn($bg:$nav_menu_hover, $color:$black, $size:14px){
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: $bg;
+    color: $color;
+    font-size: $size;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    letter-spacing: 4px;
+    &:hover{
+        background: $color;
+        color: $bg;
+    }
+}
